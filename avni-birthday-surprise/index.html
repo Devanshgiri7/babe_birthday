@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#081329" />
+    <meta name="description" content="A little animated birthday universe, made especially for Avni." />
+    <title>A little universe for Avni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@500;600;700&family=Great+Vibes&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body>
+    <div class="outer-glow" aria-hidden="true"></div>
+    <main class="stage" id="stage" aria-label="Avni's birthday story">
+      <div class="frame-grain" aria-hidden="true"></div>
+      <header class="global-controls" aria-label="Experience controls">
+        <button class="icon-button sound-button" id="sound-toggle" type="button" aria-label="Turn on music" aria-pressed="false" title="Music">
+          <svg class="icon icon-sound" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4H4Z"/><path d="M16 9.2a4 4 0 0 1 0 5.6M18.5 6.8a7.5 7.5 0 0 1 0 10.4"/></svg>
+          <svg class="icon icon-muted" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4H4Z"/><path d="m17 9 5 6m0-6-5 6"/></svg>
+        </button>
+        <button class="icon-button" id="fullscreen-toggle" type="button" aria-label="Enter fullscreen" title="Fullscreen">
+          <svg class="icon icon-expand" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M3 3l7 7M16 21h5v-5m0 5-7-7M21 8V3h-5m5 0-7 7M3 16v5h5m-5 0 7-7"/></svg>
+          <svg class="icon icon-collapse" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3v5H3m0 0 7-7M16 21v-5h5m0 0-7 7M21 8h-5V3m0 0 5 5M3 16h5v5m0 0-5-5"/></svg>
+        </button>
+      </header>
+      <div class="sound-toast" id="sound-toast" role="status" aria-live="polite"></div>
+      <div class="scene-root" id="scene-root" aria-live="off"></div>
+      <div class="scene-progress" id="scene-progress" aria-label="Scene 1 of 8">
+        <span class="progress-label">A story for Avni</span>
+        <span class="progress-count" id="progress-count">01 <i>/</i> 08</span>
+        <span class="progress-track"><span id="progress-fill"></span></span>
+      </div>
+    </main>
+    <script>document.documentElement.classList.add('js-ready');</script>
+  </body>
+</html>
