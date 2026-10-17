@@ -2,7 +2,7 @@
 const birthdayContent = {
   recipient: "AVNI",
   date: "18·10·2026",
-  musicSrc: "Aarzu.mp3",
+  musicSrc: "./Aarzu.mp3",
   letter: {
     salutation: "Dear {{recipient}} 💗,",
     paragraphs: [
