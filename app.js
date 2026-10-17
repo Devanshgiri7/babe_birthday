@@ -26,7 +26,7 @@ function particles(kind = "petals", count = 12) {
 }
 
 function cityBackdrop(extraClass = "") {
-  return `<div class="city-backdrop ${extraClass}" aria-hidden="true"><div class="stars stars--small"></div><div class="stars stars--large"></div><img src="./assets/night-city.svg" alt="" class="city-art"/><div class="cloud-bank"></div></div>`;
+  return `<div class="city-backdrop ${extraClass}" aria-hidden="true"><div class="stars stars--small"></div><div class="stars stars--large"></div><img src="night-city.svg" alt="" class="city-art"/><div class="cloud-bank"></div></div>`;
 }
 
 function scene(index, name, body, extraClass = "") {
